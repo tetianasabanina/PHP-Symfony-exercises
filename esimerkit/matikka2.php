@@ -19,10 +19,7 @@ class Matikka {
         if($kalori == 0) {
             return $joule / 4.1885 . " cal";
         } else if ($joule == 0) {
-        return $kalori * 4.1855 . " J";
-        } else {
-            echo "joku meni pieleen";
         }
-    }
+    }   
 }
 ?>
