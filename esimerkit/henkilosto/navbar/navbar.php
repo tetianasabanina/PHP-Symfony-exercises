@@ -10,7 +10,7 @@
         <a class="nav-link" href="#">Koti <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Lisää henkilö</a>
+        <a class="nav-link" href="HenkiloSyotto.php">Lisää henkilö</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Hae henkilö</a>

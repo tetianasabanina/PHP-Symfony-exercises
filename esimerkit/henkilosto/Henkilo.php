@@ -49,11 +49,18 @@ class Henkilo {
         include("Yhteydenhallinta.php");
 
         // Otetaan yhteys tietokantaan
-        $this->yhteydenhallinta = new Yhteydenhalinta();
+        $this->yhteydenhallinta = new Yhteydenhallinta();
     }
     public function haeKaikkiHenkilot() {
         return $this->yhteydenhallinta->suoritaHakuLause("select * from henkilosto");
     }
 
+    public function lisaaHenkilo() {
+        return $this->yhteydenhallinta->suoritaPaivitysLause("
+        insert into henkilosto (henkilonumero, etunumi, sukunimi, osasto, palkka) values (?,?,?,?,?)",
+        Array($this->henkilonumero, $this->etunimi, $this->sukunimi, $this->osasto, $this->palkka));
+    }
 }
+
+
 ?>
