@@ -56,6 +56,12 @@ class Auto {
         Array($this->merkki, $this->malli, $this->valmistusvuosi, $this->rekisterinumero));
        
     }
+
+    public function haeRekisterinumerolla($rekisterinumero) {
+        // echo "sukunimi = " . $sukunimi . "<br>";
+        return $this->yhteydenhallinta->suoritaHakuLause("
+        select * from autot where rekisterinumero = '$rekisterinumero' ");
+    }
 }
 
 

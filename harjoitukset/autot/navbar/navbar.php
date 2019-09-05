@@ -13,7 +13,7 @@
         <a class="nav-link" href="autonSyotto.php">Lisää auto</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Hae auto</a>
+        <a class="nav-link" href="haeRekisterinumerolla.php">Hae auto</a>
       </li>
       
     </ul>
