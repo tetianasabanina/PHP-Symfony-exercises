@@ -90,5 +90,7 @@ class YhteydenHallinta {
         $this->yhteys = null;
     }
 
+    
+
 }
 ?>

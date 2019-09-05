@@ -7,13 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Koti <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Koti <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="HenkiloSyotto.php">Lisää henkilö</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Hae henkilö</a>
+        <a class="nav-link" href="haeSukunimella.php">Hae henkilö</a>
       </li>
       
     </ul>

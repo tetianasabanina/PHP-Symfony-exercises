@@ -1,3 +1,7 @@
+<?php ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+?>
 <?php
 class Henkilo {
     private $henkilonumero;
@@ -59,6 +63,12 @@ class Henkilo {
         return $this->yhteydenhallinta->suoritaPaivitysLause("
         insert into henkilosto (henkilonumero, etunumi, sukunimi, osasto, palkka) values (?,?,?,?,?)",
         Array($this->henkilonumero, $this->etunimi, $this->sukunimi, $this->osasto, $this->palkka));
+    }
+
+    public function haeSukunimella($sukunimi) {
+        // echo "sukunimi = " . $sukunimi . "<br>";
+        return $this->yhteydenhallinta->suoritaHakuLause("
+        select * from henkilosto where sukunimi = '$sukunimi' ");
     }
 }
 

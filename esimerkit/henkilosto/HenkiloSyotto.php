@@ -11,6 +11,11 @@
     <title>Henkilön Syöttö</title>
   </head>
   <body>
+  <?php
+          // Navbar
+          include("navbar/navbar.php");
+  ?>
+   
   <form class="form-signin" action="henkilonLisays.php" method="POST">
   
     <h1 class="h3 mb-3 font-weight-normal">Lisää henkilö</h1>
