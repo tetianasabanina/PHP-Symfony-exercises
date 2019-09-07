@@ -11,7 +11,7 @@
     <title>Linkki Lisäys</title>
   </head>
   <body>
-  <?php include 'navbar/navbar.php'?>
+  
     <?php 
     // referenssi Linnki-olioon
     include "Linkki.php";

@@ -64,7 +64,11 @@ class Linkki {
         return $this->yhteydenhallinta->suoritaPaivitysLause("
         insert into linkit (id, linkki, otsikko, kuvaus, avainsana) values (?,?,?,?,?)",
         Array($this->id, $this->linkki, $this->otsikko, $this->kuvaus, $this->avainsana));
-       
+    }
+    public function haeAvainsanolla($avainsana) {
+        // echo "avainsana = " . $avainsana . "<br>";
+        return $this->yhteydenhallinta->suoritaHakuLause("
+        select * from linkit where avainsana = '$avainsana' ");
     }
 }
 ?>

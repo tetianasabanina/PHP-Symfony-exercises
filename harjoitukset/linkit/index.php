@@ -104,6 +104,33 @@ ini_set('display_startup_errors', 1);
           }
         });
       });
+            //siirry poista-sivulle
+$(document).on('click', '.poista-object', function(){
+
+var id = $(this).attr('poista-id');
+
+bootbox.confirm({
+  message: "<h4>Oletko varma?</h4>",
+  buttons: {
+    confirm: {
+      label: '<i class="far fa-check"></i>Kyllä',
+      className: 'btn-danger'
+    },
+    cancel: {
+      label: '<iclass="far fa-times"></i>En',
+      className: 'btn-primary'
+    }
+  },
+  callback: function(result) {
+    // Painettiinko Kyllä-painiketta?
+    if(result==true) {
+      // Kyllä painettiin, joten siirrytään poista-sivulle
+      var url = "poistaLinkki.php?id=" + id;
+      $(location).attr('href', url);
+    }
+  }
+});
+});
     </script>
   </body>
 </html>
