@@ -64,9 +64,13 @@
             <td><?php echo $henkilo['osasto'] ?></td>
             <td><?php echo $henkilo['palkka'] ?></td>
             <td>
+                <!--
                 <button muuta-id="<?php echo $id ?>" class="btn btn-primary  muuta-object">Muuta</button>
+                -->
+                <a href='muutaHenkilo.php?id=<?php echo $id ?>' 
+                class="btn btn-primary muuta-object" role="button">Muuta</a>
                 <a href='poistaHenkilo.php?id=<?php echo $id ?>' 
-                class="btn btn-danger" role="button">Poista</a>
+                class="btn btn-danger poista-object" role="button">Poista</a>
             </td>
         </tr>
         <?php
