@@ -58,7 +58,7 @@ class Auto {
     }
 
     public function haeRekisterinumerolla($rekisterinumero) {
-        // echo "sukunimi = " . $sukunimi . "<br>";
+        // echo "rekisterinumero = " . $rekisterinumero . "<br>";
         return $this->yhteydenhallinta->suoritaHakuLause("
         select * from autot where rekisterinumero = '$rekisterinumero' ");
     }

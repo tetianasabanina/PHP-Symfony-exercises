@@ -63,8 +63,12 @@
             <td><?php echo $auto['valmistusvuosi'] ?></td>
             
             <td>
-                <button muuta-id="<?php echo $id ?>" class="btn btn-primary  muuta-object">Muuta</button>
-                <a href='poistaHenkilo.php?id=<?php echo $id ?>' 
+                <!--
+                <button muuta-id="<?php echo $id ?>" class="btn btn-primary muuta-object"><a href='muutaAuto.php?id=<?php echo $id ?>'>Muuta</a></button>
+                -->
+                <a href='muutaAuto.php?id=<?php echo $id ?>' 
+                class="btn btn-primary" role="button">Muuta</a>
+                <a href='poistaAuto.php?id=<?php echo $id ?>' 
                 class="btn btn-danger" role="button">Poista</a>
             </td>
         </tr>
