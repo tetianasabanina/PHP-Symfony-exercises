@@ -9,13 +9,23 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Koti <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tietokanta
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="autonSyotto.php">Lisää auto</a>
+          <a class="dropdown-item" href="haeRekisterinumerolla.php">Hae auto</a>
+        </div>
+      </li>
+      <!--
       <li class="nav-item">
         <a class="nav-link" href="autonSyotto.php">Lisää auto</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="haeRekisterinumerolla.php">Hae auto</a>
       </li>
-      
+      -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
